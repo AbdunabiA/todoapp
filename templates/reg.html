@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Registratsiya qilish</h1>
+    <form action="{% url 'reg' %}" method="post">{% csrf_token %}
+        <input type="text" name="login" placeholder="Login"/><br>
+        <input type="text" name="parol" placeholder="Parol"/><p>parolda kamida 8 simvol qatnashkan bo'lsin va uni ichida sonlar va harflar bolsin</p>
+        <br>
+        <input type="text" name="parol2" placeholder="Parolni tasdiqlang"/>
+        <button type="submit">Ro'yhatdan o'tish</button>
+    </form>
+</body>
+</html>
